@@ -81,7 +81,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/tvHeader"
+            android:id="@+id/textHeader"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_10sdp"
@@ -109,7 +109,7 @@
             app:cardCornerRadius="@dimen/_7sdp"
             app:cardElevation="@dimen/_30sdp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvHeader"
+            app:layout_constraintTop_toBottomOf="@+id/textHeader"
             app:layout_goneMarginEnd="@dimen/_2sdp">
 
             <FrameLayout
@@ -128,7 +128,10 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:background="@android:color/transparent"
-                    android:src="@drawable/ic_baseline_play_circle_outline_24" />
+                    android:minWidth="48dp"
+                    android:minHeight="48dp"
+                    android:src="@drawable/ic_baseline_play_circle_outline_24"
+                    tools:ignore="SpeakableTextPresentCheck" />
             </FrameLayout>
         </androidx.cardview.widget.CardView>
 
